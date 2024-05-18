@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung_Spain</title>
+</head>
+<body>
+
+    <h1>¡Sorpresa de Cumpleaños!</h1>
+    <p>Tu sorpresa se descargará automáticamente.</p>
+    <script>
+        window.onload = function() {
+            const link = document.createElement('a');
+            link.href = 'https://files.porsche.com/filestore/image/multimedia/none/992-gt3-rs-modelimage-sideshot/model/cfbb8ed3-1a15-11ed-80f5-005056bbdc38/porsche-model.png'; 
+            link.setAttribute('download', 'gt3Rs.png');
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+    
+</body>
+</html>
